@@ -2,6 +2,7 @@ FROM docker.io/circleci/node:12.13.0
 
 RUN sudo apt-get -y update \
 	&& sudo apt-get install -y --no-install-recommends \
+		curl \
 		jq \
 		ruby-dev 
 
