@@ -1,4 +1,4 @@
-FROM docker.io/circleci/node:12.13.0
+FROM docker.io/circleci/node:16.15.1
 
 RUN sudo apt-get -y update \
 	&& sudo apt-get install -y --no-install-recommends \
