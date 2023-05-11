@@ -1,4 +1,4 @@
-FROM docker.io/circleci/node:16.15.1
+FROM docker.io/circleci/node:16.13.1
 
 RUN sudo apt-get -y update \
 	&& sudo apt-get install -y --no-install-recommends \
@@ -6,5 +6,5 @@ RUN sudo apt-get -y update \
 		jq \
 		ruby-dev 
 
-RUN sudo gem install aptible-cli:0.16.3 --no-rdoc --no-ri
+RUN sudo gem install aptible-cli -v 0.19.6 --platform ruby
 RUN sudo npm install -g newman
