@@ -5,5 +5,5 @@ RUN sudo apt-get -y update \
 	jq \
 	ruby-dev 
 
-RUN sudo gem install aptible-cli:0.16.3 --no-rdoc --no-ri
+RUN sudo gem install aptible-cli -v 0.19.6 --platform ruby
 RUN sudo npm install -g apollo
